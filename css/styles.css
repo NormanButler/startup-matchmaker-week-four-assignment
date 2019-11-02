@@ -1,0 +1,254 @@
+/*
+
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+  BASE SETUP
+*******************/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+/*******************
+  TYPOGRAPHY SETUP
+*******************/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+.strapline,
+.teasers-block h2 {
+  font-family: 'Merriweather', serif;
+}
+
+.cta,
+nav li:nth-child(-n+2) {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+/*******************
+  GENERAL SETUP
+*******************/
+
+body {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cta {
+  color: black;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom: 3px solid;
+}
+
+.cta-yellow {
+  background-color: #FFF653;
+  border-color: #CEC441;
+}
+
+.cta-grey {
+  background-color: #C6C6C6;
+  border-color: #999999;
+}
+
+/*******************
+  HEADER STYLES
+*******************/
+
+header {
+  background-color: black;
+  color: #FFF653;
+  padding: 10px 0 20px;
+  border-bottom: 5px solid #FFF653;
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+}
+
+header ul {
+  margin-top: 10px;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+header a {
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+/*******************
+  STRAPLINE STYLES
+*******************/
+
+.strapline {
+  background-color: #C6C6C6;
+  border-top: 1px solid #AAAAAA;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 26px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.strapline p {
+  margin: 0;
+  font-style: italic;
+}
+
+del {
+  color: #999999;
+}
+
+ins {
+  text-decoration: none;
+  border-bottom: 3px solid #FFF653;
+}
+
+/*******************
+  INTRO STYLES
+*******************/
+
+.intro {
+  background-image: url('../images/coworking.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.intro-content {
+  background-color: rgba(255,255,255,0.7);
+  width: 350px;
+  margin-left: auto;
+  padding: 30px;
+}
+
+.intro-content h2 {
+  margin: 0;
+}
+
+.intro-content p {
+  margin-top: 0;
+}
+
+/*******************
+  TEASER STYLES
+*******************/
+
+.teasers {
+  padding: 20px 0;
+}
+
+.teasers ul {
+  display: flex;
+}
+
+.teasers-block {
+  padding: 20px 2.5vw;
+  border-right: 1px solid #C6C6C6;
+}
+
+.teasers-block:first-child {
+  padding-left: 0;
+}
+
+.teasers-block:last-child {
+  padding-right: 0;
+  border: none;
+}
+
+.teasers-block h2 {
+  margin: 0;
+}
+
+.teasers-block p {
+  margin-top: 0;
+}
+
+/*******************
+  FOOTER STYLES
+*******************/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+/*******************
+  CARD LAYOUT STYLES
+*******************/
+
+.cards {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:#C6C6C6; 
+}
+
+.card {
+  flex: 0 1 calc(25% - 1em);
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.card p {
+  font-size: 30px;
+  font-weight: 400;
+}
+.html-tag p, .css-tag p, .js-tag p {
+  color: white;
+  background-color: #999999;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding: 0px 30px;
+  text-align: center;
+  border-radius:25px;
+}
